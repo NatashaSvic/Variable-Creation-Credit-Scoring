@@ -43,7 +43,6 @@ def safe_read_yahoo_finance(stock):
             print('Error reading Yahoo KS - number of tries=',ntries)
         finally:
             ntries += 1 
-
     return(df_stock)    
 
 df = safe_read_yahoo_finance('GOOG')
